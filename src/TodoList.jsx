@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 
-// TodoItem component
+
 const TodoItem = ({ todo, onDelete }) => {
   return (
     <div>
@@ -19,7 +19,7 @@ TodoItem.propTypes = {
   onDelete: PropTypes.func.isRequired,
 };
 
-// TodoList component
+
 const TodoList = () => {
   const [todos, setTodos] = useState([]);
   const [newTodo, setNewTodo] = useState('');
@@ -55,6 +55,5 @@ const TodoList = () => {
   );
 };
 
-// PropTypes for TodoList can be added if needed
 
 export default TodoList;
